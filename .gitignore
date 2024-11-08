@@ -35,6 +35,3 @@ static/cache/
 # Игнорировать потенциально чувствительные файлы
 .env
 config.py
-
-# Игнорировать requirements.txt (он может часто меняться)
-requirements.txt
