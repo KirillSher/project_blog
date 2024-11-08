@@ -1,0 +1,13 @@
+<!-- app/templates/edit_profile.html -->
+{% extends "base.html" %}
+
+{% block main %}
+<h1>Edit Profile</h1>
+<form method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" value="{{ user.username }}" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="{{ user.email }}" required>
+    <button type="submit">Save Changes</button>
+</form>
+{% endblock %}
