@@ -32,8 +32,8 @@
 ## Настройка:
 
   1. Скопируйте файл .env.example в .env и заполните его необходимыми значениями для:
-    * SECRET_KEY: Секретный ключ для Flask.
-    * DATABASE_URL: URL для подключения к базе данных (например, sqlite:///blog.db для SQLite).
+    - SECRET_KEY: Секретный ключ для Flask.
+    - DATABASE_URL: URL для подключения к базе данных (например, sqlite:///blog.db для SQLite).
   2. Скопируйте файл config.example.py в config.py и измените настройки (если требуется).
 
 ## Использование:
