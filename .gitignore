@@ -35,3 +35,6 @@ static/cache/
 # Игнорировать потенциально чувствительные файлы
 .env
 config.py
+
+# Игнорировать личные файлы
+app/patterns/name_patterns_en-ru.txt

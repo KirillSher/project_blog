@@ -1,7 +1,6 @@
 from flask import render_template, request, redirect, url_for
 
 from app import app
-from app.patterns import auth_strategy
 from app.services.user_service import register_user
 
 

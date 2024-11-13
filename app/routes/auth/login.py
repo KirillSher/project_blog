@@ -1,8 +1,8 @@
-from flask import render_template, request, redirect, url_for, session
+from flask import render_template, request, redirect, url_for
 from flask_login import login_required, current_user, logout_user, login_user, LoginManager
 
 from app import app
-from app.patterns.auth_strategy import DatabaseAuthStrategy
+from app.patterns.behavioral.auth_strategy import DatabaseAuthStrategy
 from app.models.users import User
 
 # Инициализируйте LoginManager
@@ -30,6 +30,9 @@ def login():
         if user:
             login_user(user)  # Используем Flask-Login для входа пользователя
             return redirect(url_for("index"))
+        else:
+            # Нет такого пользователя или пароль неверный
+            return render_template("auth/login.html", error="Неверный логин или пароль.")
 
     return render_template("auth/login.html")
 

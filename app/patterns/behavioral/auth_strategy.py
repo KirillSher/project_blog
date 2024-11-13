@@ -1,4 +1,3 @@
-# app/auth_strategy.py
 from werkzeug.security import check_password_hash
 
 
