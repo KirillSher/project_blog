@@ -37,4 +37,4 @@ static/cache/
 config.py
 
 # Игнорировать личные файлы
-app/patterns/name_patterns_en_ru.txt
+name_patterns_en_ru.txt
