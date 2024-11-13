@@ -1,0 +1,2 @@
+behavioral=поведенческий
+structural=структурный
