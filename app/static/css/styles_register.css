@@ -37,7 +37,7 @@ textarea {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    text-align: center;
+    text-align: left;
 }
 
 input[type="email"],
@@ -47,7 +47,7 @@ textarea {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    text-align: center;
+    text-align: left;
 }
 
 input[type="password"],
@@ -57,7 +57,7 @@ textarea {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    text-align: center;
+    text-align: left;
 }
 
 input[type="submit"] {

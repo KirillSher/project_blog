@@ -13,7 +13,7 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(255), unique=False, nullable=True)
     password = db.Column(db.String(255), nullable=False)
     role = db.Column(db.String(255), default='user')
-    avatar = db.Column(db.String(255), default='default_avatar.jpg')
+    avatar = db.Column(db.String(255), default='default_avatar.png')
     created_at = db.Column(db.DateTime, default=datetime.datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.datetime.utcnow, onupdate=datetime.datetime.utcnow)
     tags = db.relationship('Tag', backref='user_tag', lazy=True, cascade="all, delete-orphan")

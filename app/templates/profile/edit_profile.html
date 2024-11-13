@@ -1,13 +1,24 @@
 <!-- app/templates/edit_profile.html -->
 {% extends "base.html" %}
 
+{% block title %}Редактирование{% endblock %}
+
 {% block main %}
-<h1>Edit Profile</h1>
-<form method="POST">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" value="{{ user.username }}" required>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" value="{{ user.email }}" required>
-    <button type="submit">Save Changes</button>
-</form>
+<div class="container_edit_profile">
+    <div class="profile-header">
+        <h1>Редактирование</h1>
+    </div>
+    <form method="POST">
+        <div class="form-field">
+            <label for="username">Имя:</label>
+            <input type="text" id="username" name="username" value="{{ user.username }}" required>
+        </div>
+        <div class="form-field">
+            <label for="email">Почта:</label>
+            <input type="email" id="email" name="email" value="{{ user.email }}" required>
+        </div>
+        <button type="submit" class="save-button">Сохранить изменение</button>
+    </form>
+</div>
 {% endblock %}
+
