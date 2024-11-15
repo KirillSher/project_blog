@@ -16,7 +16,7 @@
 
   1. Клонируйте репозиторий:
   ```shell
-    git clone https://github.com/your_username/your_blog_repo.git
+    git clone https://github.com/KirillSher/project_blog.git
   ```
     
   2. Установите зависимости:  
